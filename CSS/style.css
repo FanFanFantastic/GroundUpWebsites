@@ -107,8 +107,7 @@ header a:hover
 #showcase
 {
     min-height: 400px;
-    background: url(../img/NYC_Background_1080.jpg) no-repeat 0 -250px;
-    background-size: cover;
+    background: url(../img/NYC_Background_1080.jpg) no-repeat 0 -520px;
     text-align: center;
     color: #ffffff;
     
@@ -118,6 +117,7 @@ header a:hover
 {
     margin-top: 100px;
     font-size: 55px;
+    margin-bottom: 10px;
 }
 
 #showcase p
@@ -217,4 +217,32 @@ footer
 {
     width: 90%;
     padding: 5px;
+}
+
+
+/*Media Queries AND Responsiveness*/
+
+
+@media(max-width: 768px)
+{
+    header #branding, #newsletter h1, #newsletter form, #icons .icon, #main-col, #sidebar
+    {
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #showcase h1
+    {
+       margin-top: 40px; 
+    }
+    
+    #newsletter button, #newsletter form input[type="email"]
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+
 }
